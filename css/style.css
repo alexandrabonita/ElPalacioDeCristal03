@@ -243,7 +243,63 @@ a:hover{
     font-size: 19px;
 }
 
+/*Tarjetas*/
+.contenedor__tarjetas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;/*indica que cuando no se noten las tarjetas, estas tarjetas se van a psicionar en forma vertical*/
+    gap: 25px ;/*tiene que ver con el espacio entre tarjetas para que no se peguen*/
+    margin-top: 25px;
+    margin-block-end: 20px;
+}
 
+.tarjeta{
+    width: 325px;    
+    background-color: var(--color__tetra);
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgb(0,0,0, 0.3);
+    overflow: hidden;
+}
+.tarjeta img{
+    width: 100%;
+    height: 350px;
+    
+    object-fit: cover;
+    
+}
+
+.contenido__tarjeta {
+    padding: 20px;
+}
+
+.contenido__tarjeta h1{
+    font-size: 23px;
+    color: var(--color__titulo1);
+}
+
+.contenido__tarjeta p{
+    font-size: 17px;
+    color: var(--color__titulo1);
+}
+
+.boton__tarjeta{
+    display: inline-block; /*que se vea en forma de fila*/
+    background-color: var(--color__negro);
+    color: var(--color__titulo1);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+    text-decoration: none;
+
+}
+.boton__tarjeta:hover{
+    color: var(--color__principal);
+    background-color: var(--color__blanco) ;
+    text-decoration: none;
+}
+
+
+/*Finaliza Tarjetas*/
 
 /* Padre ejercicio Flexbox*/
 .flex__container{
